@@ -1,0 +1,321 @@
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Noto Sans TC", "Microsoft JhengHei", "PingFang TC", sans-serif;
+  color: #000;
+  background: #fffde6;
+}
+
+/* ===== Header(高度 147px) ===== */
+.site-header {
+  position: relative;
+  flex-shrink: 0;
+  display: flex;
+  align-items: flex-end;
+  height: 147px;
+  padding: 0 40px 0 178px;
+  background: #d4fffa;
+}
+
+.logo {
+  position: absolute;
+  top: 24px;
+  left: 178px;
+}
+
+.logo img {
+  width: 123px;
+  height: 123px;
+}
+
+/* ===== Nav ===== */
+.main-nav {
+  margin-left: 431px;      /* 對應設計稿「首頁」起始位置 x=609 */
+  padding-bottom: 14px;
+}
+
+.main-nav ul {
+  display: flex;
+  gap: 40px;
+}
+
+.main-nav a {
+  font-size: 26px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.main-nav a:hover {
+  color: #3aaee8;
+}
+
+/* ===== Header 右側圖示 ===== */
+.tool-icons {
+  display: flex;
+  align-items: flex-end;
+  gap: 36px;
+  margin-left: auto;
+  padding-bottom: 16px;
+}
+
+.tool-icons img {
+  width: 48px;
+  height: 56px;
+  object-fit: contain;
+}
+
+.tool-icons a:hover img {
+  opacity: 0.7;
+}
+
+/* ===== Main ===== */
+.site-main {
+  flex: 1;
+  padding: 29px 0 31px;
+  background: #fffde6;
+}
+
+/* Banner(設計稿尺寸 923 x 534,水平置中) */
+.banner {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 77px;
+}
+
+.banner img {
+  width: 100%;
+  max-width: 923px;
+  height: auto;
+}
+
+/* 藍框範圍:保留 1280 x 411 的版面空間,但不顯示邊框 */
+.content-area {
+  width: 100%;
+  max-width: 1280px;
+  min-height: 411px;
+  margin: 0 auto;
+  padding-top: 30px;
+  text-align: center;
+  /* 不顯示邊框與背景 */
+  border: 0;
+  background: transparent;
+}
+
+.welcome-title {
+  font-size: 96px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #9bc7da;
+}
+
+.welcome-subtitle {
+  margin-top: 70px;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #8bdcff;
+}
+
+/* ===== 角色頁 web.html ===== */
+.role-page {
+  padding: 83px 0 28px;
+}
+
+/* 角色圖(設計稿尺寸 1246 x 389) */
+.role-banner {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 57px;
+}
+
+.role-banner img {
+  width: 100%;
+  max-width: 1246px;
+  height: auto;
+}
+
+/* 藍框範圍:保留 1280 x 519 的版面空間,但不顯示邊框 */
+.role-card {
+  width: 100%;
+  max-width: 1280px;
+  min-height: 519px;
+  margin: 0 auto;
+  padding: 0 55px 0 145px;
+  border: 0;
+  background: transparent;
+}
+
+.role-name {
+  font-size: 100px;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  color: #9bc7da;
+}
+
+.role-desc {
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 85px;
+  color: #8bdcff;
+}
+
+/* ===== 造型頁 skin.html ===== */
+.skin-page {
+  padding: 23px 0 32px;
+}
+
+/* 造型圖(設計稿尺寸 998 x 561) */
+.skin-banner {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 44px;
+}
+
+.skin-banner img {
+  width: 100%;
+  max-width: 998px;
+  height: auto;
+}
+
+/* 藍框範圍:保留 1280 x 508 的版面空間,但不顯示邊框 */
+.skin-card {
+  width: 100%;
+  max-width: 1280px;
+  min-height: 508px;
+  margin: 0 auto;
+  padding: 15px 40px 0 32px;
+  border: 0;
+  background: transparent;
+}
+
+.skin-title {
+  font-size: 96px;
+  font-weight: 400;
+  line-height: 96px;
+  text-align: center;
+  color: #9bc7da;
+}
+
+/* 11 個造型:三欄,第一欄「財源滾滾」垂直置中於下方兩列 */
+.skin-list {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 430px 456px 1fr;
+  grid-template-rows: 84px 84px 112px 84px;
+}
+
+.skin-list li {
+  display: flex;
+  align-items: center;
+  height: 84px;
+  font-size: 48px;
+  line-height: 1;
+  white-space: nowrap;
+  color: #8bdcff;
+}
+
+.skin-list li::before {
+  content: "";
+  flex: none;
+  width: 14px;
+  height: 14px;
+  margin-right: 23px;
+  border-radius: 50%;
+  background: #8bdcff;
+}
+
+.skin-list li:nth-child(3) {
+  grid-row: 3 / span 2;
+  align-self: center;
+  margin-top: 28px;
+}
+
+.skin-list li:nth-child(6),
+.skin-list li:nth-child(10) {
+  align-self: end;
+}
+
+@media (max-width: 900px) {
+  .skin-card {
+    padding: 15px 0 0;
+  }
+
+  .skin-title {
+    font-size: 56px;
+    line-height: 1.2;
+  }
+
+  .skin-list {
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    padding-left: 24px;
+  }
+
+  .skin-list li,
+  .skin-list li:nth-child(3),
+  .skin-list li:nth-child(6),
+  .skin-list li:nth-child(10) {
+    grid-row: auto;
+    align-self: auto;
+    margin-top: 0;
+    height: auto;
+    min-height: 64px;
+    font-size: 32px;
+  }
+}
+
+/* ===== Footer(高度 117px) ===== */
+.site-footer {
+  flex-shrink: 0;
+  height: 117px;
+  background: #b8e0ff;
+}
+
+/* ===== 較小螢幕 ===== */
+@media (max-width: 1400px) {
+  .site-header {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .logo {
+    left: 24px;
+  }
+
+  .main-nav {
+    margin-left: 160px;
+  }
+
+  .site-main {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
